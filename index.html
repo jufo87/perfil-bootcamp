@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner-superior">
+        <div>
+            <h2 class="miperfil">Mi Perfil</h2>
+        </div>
+        <div class="navegacion">
+            <a href="" class="link">Inicio</a>
+            <a href="" class="link">Mi Perfil</a>
+            <a href="" class="link">Encontrar conexiones</a>
+            <a href="" class="botoncerrar">Cerrar sesión</a>
+        </div>
+    </div>
+
+    <div class="paneles">
+        <div class="panel-izquierda">
+            <div class="info-perfil">
+                <img src="perfi.jpg" alt="Foto Perfil" class="foto-perfil">
+                <h1 class="nombre-perfil">Julio Fonseca</h1>
+                <p>Chile, Santiago</p>
+                <p>Desarrollador Full Stack Java</p>
+                <p>Apasionado por descubrir y aprender nuevas tecnologías. Cuando no estoy programando, dedico mi tiempo a cocinar y explorar la naturaleza</p>
+            </div>
+
+            <div class="estudios-perfil">
+                <h1 class="nombre-perfil">Estudios</h1>
+                <p>Bootcamp Talento Digital Desarrollo Full Stack Java</p>
+                <p>Mayo 2025 - Noviembre 2025</p>
+            </div>
+        </div>
+
+        <div class="panel-derecha">
+            <div class="perfil-seguidores">
+                <h1 class="nombre-perfil">
+                    Solicitudes de conexión 
+                    (<span id="contador-solicitudes" class="contador">2</span>)
+                </h1>
+                
+                <div id="lista-solicitudes">
+                    <div class="solicitud-item" data-nombre="Baco">
+                        <img src="baco.jpg" alt="Baco" class="foto-seguidor">
+                        <p class="nombre-seguidor">Baco</p>
+                        <div class="aceptar-solicitud">
+                            <button class="boton-aceptar">Aceptar</button>
+                            <button class="boton-noaceptar">Rechazar</button>
+                        </div>
+                    </div>
+
+                    <div class="solicitud-item" data-nombre="Amanda">
+                        <img src="amanda.jpg" alt="Amanda" class="foto-seguidor">
+                        <p class="nombre-seguidor">Amanda</p>
+                        <div class="aceptar-solicitud">
+                            <button class="boton-aceptar">Aceptar</button>
+                            <button class="boton-noaceptar">Rechazar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="perfil-seguidores">
+                <h1 class="nombre-perfil">
+                    Tus conexiones 
+                    (<span id="contador-conexiones" class="contador">2</span>)
+                </h1>
+                
+                <div id="lista-conexiones">
+                    <div class="conexion-item">
+                        <img src="magda.jpg" alt="Magda" class="foto-seguidor">
+                        <p class="nombre-seguidor">Magda</p>
+                    </div>
+
+                    <div class="conexion-item">
+                        <img src="pablo.png" alt="Pablo" class="foto-seguidor">
+                        <p class="nombre-seguidor">Pablo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
